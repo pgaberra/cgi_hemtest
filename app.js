@@ -30,7 +30,7 @@ app.post('/count', (req, res) => {
     }
 
     res.status(200).json(getTheTenMostFrequentWords(wordFrequency));
-})
+});
 
 // start server
 app.listen(port, () => {
