@@ -25,7 +25,7 @@ continuously filled with words and their corresponding word counters. If the cur
 simply increment its counter with 1, if the word doesn't exist, we add it to the object with an initial word counter of 1.
 I've then branched out the rest of the functionality into a separate function called ``getTheTenMostFrequentWords()``, 
 that takes the previously constructed object, sorts the words based on their word counter, then filters the 10 most 
-frequent words. To do this, I've utilized the build-in methods ``Object.entries()`` and ``Object.fromEntries()``. I use 
+frequent words. To do this, I've utilized the built-in methods ``Object.entries()`` and ``Object.fromEntries()``. I use 
 ``Object.entries()`` to convert the object to an array, simply so I can utilize the ``sort()`` and ``filter()`` that 
 JavaScript array has. Finally, after all of that is done, I use ``Object.fromEntries()`` to convert the array back to an 
 object, which is then returned to the caller.
