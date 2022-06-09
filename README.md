@@ -8,9 +8,9 @@ Node Version: 17.7.2
 
 ## Intended use
 This web-based API is intended to be used as a simple word counter. The user can provide a chunk of text which the API 
-will process and then 10 most frequent occurring words in the text, together with a counter for each word representing 
-how many times the word occurred in the text. **It's important** to note that any unnecessary whitespace being counter as a 
-word. For example, texts like "  Banan  Hund" will generate the following response; {"":3,"Banan":1,"Hund":1}.
+will process and then respond with the 10 most frequent occurring words in the text, together with a counter for each word 
+representing how many times the word occurred in the text. **It's important** to note that any unnecessary whitespace is 
+being counted as a word. For example, texts like "  Banan  Hund" will generate the following response; {"":3,"Banan":1,"Hund":1}.
 
 ## Procedures
 To develop this web-based API, I used Node.js together with the express module. To utilize the express module, you first 
