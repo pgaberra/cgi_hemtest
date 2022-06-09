@@ -33,6 +33,6 @@ app.post('/count', (req, res) => {
 })
 
 // start server
-app.listen(port, function() {
+app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
