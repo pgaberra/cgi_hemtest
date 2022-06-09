@@ -30,4 +30,16 @@ to an array, simply so I can utilize the ``sort()`` and ``filter()`` that JavaSc
 is done, I use ``Object.fromEntries()`` to convert the array back to an object, which is then returned to the caller.
 
 ## How to use
+### Server
+To use this API, please clone this repository using *git clone https://github.com/pgaberra/cgi_hemtest.git*. In order 
+to run the server locally on your machine, you need to have Node.js installed. I've also excluded the **node_modules** 
+folder from version control to not cause any dependency conflicts. Therefor, the user has to install express using *npm 
+install express*, otherwise the server won't run. Finally, to start the server locally, use the *node app* command in the 
+terminal when inside the project directory.
+
+### Client
+To send a POST request with text data to the server, there are various amount of options one could use. Curl is one popular 
+option that can be used directly from the command-line (curl should be preinstalled on most Windows and Linux machines). 
+Simply type *curl -H "Content-type: text/plain" -X "POST" -d "insert text data here" http://localhost:3000/count*. Other 
+3rd party programs can also be utilized, such as REST Client in Visual Studio Code.
 
